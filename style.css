@@ -154,7 +154,7 @@ a:focus {
     }
 
     .additional {
-        display: inline;
+        display:  block;
     }
     
     .full_text {
@@ -193,7 +193,7 @@ a:focus {
     }
     
     .full_text {
-        display: inline;
+        display: block;
     }
 
     .content {
@@ -221,4 +221,6 @@ a:focus {
     .nav-title {
         display: block;
     }
+
+    
 }
