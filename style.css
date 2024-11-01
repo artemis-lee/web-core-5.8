@@ -124,6 +124,10 @@ a:focus {
     border-radius: 5px;
 }
 
+.nav-title {
+    display: none;
+}
+
 @media (min-width: 768px) {
     nav {
         justify-content: space-between;
@@ -210,6 +214,11 @@ a:focus {
         height: auto;
     }
     
+    .main-title {
+        display: none
+    }
     
-    
+    .nav-title {
+        display: block;
+    }
 }
