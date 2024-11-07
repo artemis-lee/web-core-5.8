@@ -152,6 +152,10 @@ a:focus {
     .container {
         padding: 15px;
     }
+
+    .menu {
+        padding-left: 15px;
+    }
 }
 
 @media(min-width: 768px) {
@@ -204,8 +208,10 @@ a:focus {
     .phone, .chat, .account, .first, .second {
         display: none;
        }
+
     nav {
         align-items: center;
+        margin-top: 50px;
     }
     label {
         display: flex;
@@ -263,5 +269,7 @@ a:focus {
         display: block;
     }
 
-    
+    .menu {
+        padding-left: 60px;
+    }
 }
