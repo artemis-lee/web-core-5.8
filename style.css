@@ -62,7 +62,8 @@ h1 {
     font-weight: lighter;
     display: flex; 
     justify-content: space-around;
-    overflow: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
     padding-left: 30px;
     gap: 25px;
 } 
@@ -94,7 +95,7 @@ label {
    }
 
 .container {
-    padding-left: 15px;
+    padding: 30px;
     max-height: 322px;
 }
 
@@ -117,6 +118,8 @@ font-size: 15px;
 a {
     text-decoration: none;
     color: #7e7282;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 a:focus {
@@ -128,11 +131,37 @@ a:focus {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media(min-width:320px) {
+    .services {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media(min-width: 768px) {
     nav {
         justify-content: space-between;
     }
     
+    .services {
+        display: flex;
+    }
 
     .phone, .chat, .account, .first, .second {
         display: flex;
@@ -141,6 +170,10 @@ a:focus {
     .content {
         display: flex;
         margin-top: 30px;
+    }
+
+    #mobile_repair, #mobile_tools {
+        display: none;
     }
 
     .menu {
@@ -179,6 +212,10 @@ a:focus {
         align-items: center;
     }
 
+    .label_to_hide {
+        display: none;
+    }
+
     main {
         background-color: white;
     }
@@ -192,6 +229,10 @@ a:focus {
 
     }
     
+    #mobile_repair, #mobile_tools {
+        display: none;
+    }
+
     .full_text {
         display: block;
     }
